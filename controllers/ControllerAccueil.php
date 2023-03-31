@@ -10,7 +10,7 @@ class ControllerAccueil{
             $this->articles();
         }
     }
-
+    
     private function articles(){
         $this->_articleManager = new ArticleManager;
         $articles = $this->_articleManager->getArticles();
