@@ -4,7 +4,7 @@ class ControllerAccueil{
     private $_view;
 
     public function __construct($url){
-        if(isset($url) && count($url) > 1){
+        if(isset($url) && count($url) > 1){   // ici on accepte un seu parametre dans l'url
             throw new Exception('Page introuvable');
         } else {
             $this->articles();
